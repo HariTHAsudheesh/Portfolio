@@ -17,7 +17,7 @@ export class PortfoliostartComponent {
     category: 'development'
   },
   {
-    image: 'assets/images/p3.jpg',
+    image: 'assets/images/image copy 2.png',
     category: 'design'
   },
   {

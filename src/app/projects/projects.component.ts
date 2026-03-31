@@ -17,9 +17,9 @@ export class ProjectsComponent {
   {
     title: "Portfolio Website",
     description: "Personal portfolio using Angular & Bootstrap",
-    image: "assets/images/project2.png",
-    github: "https://github.com/yourlink",
-    demo: "#"
+    image: "assets/images/image copy 2.png",
+    github: "https://github.com/HariTHAsudheesh/Portfolio.git",
+    demo: "portfolio-1xkk.onrender.com/"
   },
   {
     title: "Online Learning Platform",
