@@ -1,0 +1,25 @@
+.projects-section {
+    background: #020617;
+    color: #e2e8f0;
+}
+
+.project-card {
+    background: #1e293b;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #38bdf8;
+}

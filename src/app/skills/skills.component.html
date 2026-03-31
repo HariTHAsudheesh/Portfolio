@@ -1,0 +1,37 @@
+<section class="skills-section py-5" id="skills">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="position-relative text-center mb-5">
+      <h1 class="display-1 text-uppercase outline-text">Skills</h1>
+      <h2 class="position-absolute top-50 start-50 translate-middle text-primary">
+        My Skills
+      </h2>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6 mb-4" *ngFor="let sk of skills">
+        <div class="skill">
+
+          <div class="d-flex justify-content-between mb-1">
+            <h6 class="fw-bold">{{sk.name}}</h6>
+            <h6 class="fw-bold">{{sk.level}}%</h6>
+          </div>
+
+          <div class="progress">
+            <div 
+              class="progress-bar bg-info" 
+              role="progressbar"
+              [style.width.%]="sk.level"
+              aria-valuemin="0"
+              aria-valuemax="100">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

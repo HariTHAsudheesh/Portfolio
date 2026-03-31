@@ -1,0 +1,48 @@
+<section class="portfolio-section py-5" id="portfolio">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="position-relative text-center mb-5">
+      <h1 class="display-1 text-uppercase outline-text">Gallery</h1>
+      <h2 class="position-absolute top-50 start-50 translate-middle text-primary">
+        My Portfolio
+      </h2>
+    </div>
+
+    <!-- FILTER BUTTONS -->
+    <div class="text-center mb-4">
+      <button class="btn btn-outline-primary m-1"
+              (click)="filter='all'">All</button>
+
+      <button class="btn btn-outline-primary m-1"
+              (click)="filter='design'">Design</button>
+
+      <button class="btn btn-outline-primary m-1"
+              (click)="filter='development'">Development</button>
+    </div>
+
+    <!-- PORTFOLIO ITEMS -->
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4"
+           *ngFor="let p of projects">
+
+        <div *ngIf="filter==='all' || filter===p.category"
+             class="portfolio-item">
+
+          <div class="position-relative overflow-hidden">
+            <img [src]="p.image" class="img-fluid rounded w-100">
+
+            <div class="portfolio-overlay">
+              <a [href]="p.image" target="_blank">
+                <i class="fa fa-plus text-white"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

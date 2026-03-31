@@ -1,0 +1,64 @@
+<section class="testimonial-section py-5" id="testimonial">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="position-relative text-center mb-5">
+      <h1 class="display-1 text-uppercase outline-text">Review</h1>
+      <h2 class="position-absolute top-50 start-50 translate-middle text-primary">
+        Clients Say
+      </h2>
+    </div>
+
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button 
+          *ngFor="let t of testimonials; let i = index"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          [attr.data-bs-slide-to]="i"
+          [class.active]="i === 0">
+        </button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner text-center">
+
+        <div 
+          class="carousel-item"
+          *ngFor="let t of testimonials; let i = index"
+          [class.active]="i === 0">
+
+          <div class="testimonial-card p-4">
+
+            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+
+            <p class="testimonial-text">{{t.message}}</p>
+
+            <img [src]="t.image"
+                 class="testimonial-img mx-auto mb-3"
+                 alt="client">
+
+            <h5 class="fw-bold">{{t.name}}</h5>
+            <span>{{t.role}}</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+
+  </div>
+</section>

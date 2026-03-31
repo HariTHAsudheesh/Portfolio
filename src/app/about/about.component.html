@@ -1,0 +1,45 @@
+<section class="about-section py-5" id="about">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="position-relative text-center mb-5">
+      <h1 class="display-1 text-uppercase outline-text">About</h1>
+      <h2 class="position-absolute top-50 start-50 translate-middle text-primary">
+        About Me
+      </h2>
+    </div>
+
+    <div class="row align-items-center">
+
+      <!-- IMAGE -->
+      <div class="col-lg-5 mb-4 mb-lg-0 text-center">
+        <img class="img-fluid rounded about-img" [src]="profilePic" alt="">
+      </div>
+
+      <!-- CONTENT -->
+      <div class="col-lg-7">
+        <h3 class="mb-4">Python Full Stack Developer</h3>
+
+        <p class="about-text">
+          With a strong background in teaching, I developed excellent communication,
+          organization, and analytical skills. Now transitioning into IT, I aim to
+          contribute to innovative projects and solve real-world problems.
+        </p>
+
+        <div class="row mb-3">
+          <div class="col-sm-6 py-2"><strong>Name:</strong> {{user.name}}</div>
+          <div class="col-sm-6 py-2"><strong>Birthday:</strong> {{user.dob}}</div>
+          <div class="col-sm-6 py-2"><strong>Degree:</strong> {{user.degree}}</div>
+          <div class="col-sm-6 py-2"><strong>Experience:</strong> {{user.experience}}</div>
+          <div class="col-sm-6 py-2"><strong>Phone:</strong> {{user.phone}}</div>
+          <div class="col-sm-6 py-2"><strong>Email:</strong> {{user.email}}</div>
+          <div class="col-sm-6 py-2"><strong>Address:</strong> {{user.address}}</div>
+        </div>
+
+        <a href="#" class="btn btn-primary me-3">Hire Me</a>
+        <a href="#" class="btn btn-outline-light">Learn More</a>
+      </div>
+
+    </div>
+  </div>
+</section>

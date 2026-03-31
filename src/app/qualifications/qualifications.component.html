@@ -1,0 +1,46 @@
+<section class="qualification-section py-5" id="qualification">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="position-relative text-center mb-5">
+      <h1 class="display-1 text-uppercase outline-text">Qualification</h1>
+      <h2 class="position-absolute top-50 start-50 translate-middle text-primary">
+        Qualification
+      </h2>
+    </div>
+
+    <div class="row">
+
+      <!-- EDUCATION -->
+      <div class="col-lg-6 mb-5">
+        <h3 class="mb-4">My Education</h3>
+
+        <div class="timeline">
+          <div class="timeline-item" *ngFor="let edu of educations">
+            <h5 class="fw-bold">{{edu.name}}</h5>
+            <p class="mb-1">
+              <strong>{{edu.university}}</strong> | 
+              <small>{{edu.year}}</small>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CERTIFICATIONS -->
+      <div class="col-lg-6">
+        <h3 class="mb-4">My Certifications</h3>
+
+        <div class="timeline">
+          <div class="timeline-item" *ngFor="let c of certifications">
+            <h5 class="fw-bold">{{c.name}}</h5>
+            <p class="mb-1">
+              <strong>{{c.company}}</strong> | 
+              <small>{{c.grade}}</small>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,51 @@
+/* SECTION */
+.services-section {
+    background: #020617;
+    color: #e2e8f0;
+}
+
+/* TITLE */
+.outline-text {
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 1px #334155;
+}
+
+/* CARD */
+.service-box {
+    background: #1e293b;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+/* ICON */
+.icon-box i {
+    font-size: 30px;
+    color: #38bdf8;
+}
+
+/* TEXT */
+.service-text {
+    color: #94a3b8;
+}
+
+/* LINK */
+.service-link {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.service-link:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .outline-text {
+        font-size: 50px;
+    }
+}

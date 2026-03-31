@@ -1,0 +1,55 @@
+
+/* SECTION */
+.contact-section {
+    background: #020617;
+    color: #e2e8f0;
+}
+
+/* TITLE */
+.outline-text {
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 1px #334155;
+}
+
+/* FORM BOX */
+.contact-form {
+    background: #1e293b;
+    border-radius: 10px;
+}
+
+/* INPUTS */
+.form-control {
+    background: #0f172a;
+    border: none;
+    color: #e2e8f0;
+    padding: 12px;
+}
+
+.form-control::placeholder {
+    color: #94a3b8;
+}
+
+/* FOCUS EFFECT */
+.form-control:focus {
+    box-shadow: 0 0 5px #38bdf8;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* BUTTON */
+.btn-primary {
+    background-color: #38bdf8;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0ea5e9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .outline-text {
+        font-size: 50px;
+    }
+}

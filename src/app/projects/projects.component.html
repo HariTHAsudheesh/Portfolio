@@ -1,0 +1,34 @@
+<section class="projects-section py-5" id="projects">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="text-center mb-5">
+      <h1 class="text-primary">My Projects</h1>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4 mb-4" *ngFor="let p of projects">
+        <div class="card project-card">
+
+          <img [src]="p.image" class="card-img-top" alt="project">
+
+          <div class="card-body">
+            <h5 class="card-title">{{p.title}}</h5>
+            <p class="card-text">{{p.description}}</p>
+
+            <a [href]="p.github" target="_blank" class="btn btn-outline-light me-2">
+              GitHub
+            </a>
+
+            <a [href]="p.demo" class="btn btn-primary">
+              Live Demo
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

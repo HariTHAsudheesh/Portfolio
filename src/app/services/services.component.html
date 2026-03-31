@@ -1,0 +1,32 @@
+<section class="services-section py-5" id="services">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="position-relative text-center mb-5">
+      <h1 class="display-1 text-uppercase outline-text">Service</h1>
+      <h2 class="position-absolute top-50 start-50 translate-middle text-primary">
+        My Services
+      </h2>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- SERVICE CARD -->
+      <div class="col-lg-4 col-md-6" *ngFor="let s of services">
+        <div class="service-box text-center p-4">
+
+          <div class="icon-box mb-3">
+            <i class="fa-2x" [ngClass]="s.icon"></i>
+          </div>
+
+          <h5 class="fw-bold mb-2">{{s.title}}</h5>
+          <p class="service-text">{{s.description}}</p>
+
+          <a href="#" class="service-link">Read More</a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

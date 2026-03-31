@@ -1,0 +1,60 @@
+
+/* SECTION (same as others) */
+.testimonial-section {
+    background: #020617;
+    color: #e2e8f0;
+}
+
+/* BIG BACK TEXT (same as About, Skills, Qualification) */
+.outline-text {
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 1px #334155;
+}
+
+/* CARD */
+.testimonial-card {
+    background: #1e293b;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT (same style as services/projects) */
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* TEXT */
+.testimonial-text {
+    color: #94a3b8;
+    font-style: italic;
+}
+
+/* IMAGE (same style as profile image theme) */
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+}
+
+/* CAROUSEL CONTROLS COLOR FIX */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* white arrows */
+}
+
+/* INDICATORS COLOR */
+.carousel-indicators [data-bs-target] {
+    background-color: #38bdf8;
+}
+
+/* RESPONSIVE (same pattern) */
+@media (max-width: 768px) {
+    .outline-text {
+        font-size: 50px;
+    }
+}

@@ -1,0 +1,39 @@
+/* SECTION */
+.skills-section {
+    background: #020617;
+    color: #e2e8f0;
+}
+
+/* TITLE BACK TEXT */
+.outline-text {
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 1px #334155;
+}
+
+/* SKILL BOX */
+.skill {
+    padding: 10px 0;
+}
+
+/* PROGRESS BAR BACK */
+.progress {
+    height: 10px;
+    background-color: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* PROGRESS BAR FILL */
+.progress-bar {
+    background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .outline-text {
+        font-size: 50px;
+    }
+}
