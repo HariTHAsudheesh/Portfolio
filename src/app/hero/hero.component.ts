@@ -10,5 +10,5 @@ export class HeroComponent {
 
   profileTitle:string="Full stack Developer"
 
-  profileImg:string="../../assets/images/HarithaCk.jpg"
+  profileImg:string="../../assets/images/profile pic.png"
 }

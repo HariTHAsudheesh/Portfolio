@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
-  profilePic:string="../../assets/images/HarithaCk.jpg"
+  profilePic:string="../../assets/images/profile pic.png"
 
   user={
 
